@@ -1,0 +1,104 @@
+/* Made by --Nahean--
+http://fb.com/AlNahean19 */
+
+
+:root{
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-neonBright: hsl(317 100% 80%);
+    --clr-neonStroke: hsl(317 100% 60%);
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-color: rgb(61, 58, 58); */
+    background-color: rgb(189, 100, 18);
+    color: rgb(235, 224, 194);
+}
+
+
+
+.cent{
+    height: 50vh;
+    width: 100vw;
+}
+
+.mosjid{
+
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+}
+.moon{
+    height: 25vh;
+    margin: 30vh auto auto 20vw;
+    opacity: 0.8;
+
+    
+}
+.dummy{
+    height: 100vh;
+}
+
+/* Svg Stars but stroke doesnt work */
+.star{
+    position: fixed;
+    opacity: 0;
+}
+
+.star1{
+    position: fixed;
+    height: 5vh;
+    width: 5vh;
+    top: 10vh;
+    right: 20vw;
+}
+.star2{
+    position: fixed;
+    height: 2vh;
+    width: 2vh;
+    top: 4vh;
+    left: 10vw;
+}
+.star3{
+    position: fixed;
+    height: 2vh;
+    width: 2vh;
+    top: 40vh;
+    left: 4vw;
+}
+.star4{
+    position: fixed;
+    height: 2vh;
+    width: 2vh;
+    top: 25vh;
+    left: 20vw;
+}
+.star5{
+    position: fixed;
+    height: 2vh;
+    width: 2vh;
+    top: 40vh;
+    left: 90vw;
+}
+.star6{
+    position: fixed;
+    height: 2vh;
+    width: 2vh;
+    top: 14vh;
+    left: 40vw;
+}
+.star7{
+    position: fixed;
+    height: 2vh;
+    width: 2vh;
+    top: 30vh;
+    left: 80vw;
+}
