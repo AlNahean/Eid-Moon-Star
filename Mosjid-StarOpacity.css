@@ -42,6 +42,7 @@ body{
 }
 .position{
     position: fixed;
+    top: 0vh;
 }
 #eid-mk path{
    stroke:var(--clr-fill)
@@ -134,8 +135,8 @@ animation: eid 5s ease 3.0s infinite alternate forwards;
     z-index: 3;
 }
 .moon{
-    height: 25vh;
-    margin: 35vh auto auto 20vw;
+    height: 20vh;
+    margin: 45vh auto auto 20vw;
     opacity: 0.8;
 
     
@@ -207,9 +208,7 @@ animation: eid 5s ease 3.0s infinite alternate forwards;
 
 }
 
-.add{
-    display: block;
-}
+
 .svg-trigger{
     height: 3vh;
     width: 100vw;
@@ -219,11 +218,35 @@ animation: eid 5s ease 3.0s infinite alternate forwards;
 }
 
 
-
-
-
-
-
+@media (min-width: 510px){
+    .mosjid{
+        width: 100vw;
+        position: fixed;
+        bottom: 0px;
+        z-index: 2;
+        /* background: url("mosjid1-short.png"); */
+    }
+    .moon{
+        margin-top: 45vh;
+        /* padding-top: 10vh; */
+        opacity: 0.8;
+        z-index: 1;
+    }
+    .eid-mk{
+        padding: 20rem;
+        transform: scale(0.7);
+        /* height: 40vh; */
+        /* width: 40vw; */
+    }
+    .center{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+            
+    }   
+}
 
 /* Animations of eid mubarak*/
 @keyframes eid {
@@ -256,6 +279,8 @@ animation: eid 5s ease 3.0s infinite alternate forwards;
             transform: rotate(358deg) ;
         }
 }
+
+
 @keyframes starStroke{
     1%{
         stroke-dashoffset: 1770.1383056640625;
@@ -268,58 +293,27 @@ animation: eid 5s ease 3.0s infinite alternate forwards;
     }
 }
 
+/* Animations of eid mubarak*/
+@keyframes eid {
+   to{
+       stroke-dashoffset: 0;
+       stroke: var(--clr-Stroke);
+   }
+}
 
+@keyframes to-fill {
 
-@media (min-width: 800px){
-    .mosjid{
-        width: 100vw;
-        position: fixed;
-        bottom: 0px;
-        z-index: 2;
-        /* background: url("mosjid1-short.png"); */
-    }
-    .moon{
-        opacity: 0.8;
-        z-index: 1;
-    }
-    .center{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 10vw;
-        align-items: flex-start;    
-    }
-
-
-         /* Animations of eid mubarak*/
-    @keyframes eid {
-        to{
-            stroke-dashoffset: 0;
-            stroke: var(--clr-Stroke);
-        }
-    }
-    
-    @keyframes to-fill {
-    
-        1%{
-            fill: transparent;
-        }
-        99%{
-            fill: var(--clr-fill);
-        }
-        100%{
-            fill: var(--clr-fill);
-            opacity: 0.8;
-        }
-    }
-    .button{
-        height: 100vh;
-        width: 100vh;
-        background-color: orangered;
-        position: fixed;
-    }
-
-
-
+   1%{
+       fill: transparent;
+   }
+   99%{
+       fill: var(--clr-fill);
+   }
+   100%{
+       fill: var(--clr-fill);
+       opacity: 0.8;
+   }
+}    
+.add{
+    display: block;
 }
